@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/Call_Btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="88dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/ic_call_black_"
+        android:paddingLeft="-10dp"
+        android:paddingTop="67dp"
+        android:text="전화걸기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BackBtn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="55dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/simple_info"
+        android:layout_width="205dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="120dp"
+        android:text="각종정보"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Com_Pay"
+        android:layout_width="316dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="이용정보나 요금"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simple_info" />
+
+    <TextView
+        android:id="@+id/Detalis_info"
+        android:layout_width="317dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:text="기준이나 그런서"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Com_Pay" />
+
+    <TextView
+        android:id="@+id/Com_Name"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="318dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackBtn"
+        app:layout_constraintVertical_bias="0.985" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercise_page">
+
+    <Button
+        android:id="@+id/BackBtn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Menu_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="595dp"
+        android:layout_weight="1"
+        android:background="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Park_info_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackBtn" />
+
+    <Button
+        android:id="@+id/main_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackBtn"
+        app:layout_constraintVertical_bias="0.959" />
+
+    <LinearLayout
+        android:id="@+id/Park_info_"
+        android:layout_width="342dp"
+        android:layout_height="766dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_btn">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="735dp">
+
+            <LinearLayout
+                android:id="@+id/Park_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
